@@ -1,0 +1,719 @@
+<html>
+<head>
+<title>TestNG:  Bangladesh</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bangladesh</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/12/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 03 14:40:58 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>742 seconds (742670 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Hunk_150" bike feature under "Premium" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Select model drop down  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (699, 1154)
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.A152E9A7F2747A80AF8B0F0705D7FFB6.e.1919}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.verify_all_emi_option(BikeFeaturePage.java:291)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.verify_all_emi_option(BikeFeatureTest.java:70)
+	at ✽.Verify all EMI option(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:23)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2082139482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2082139482'><pre>java.lang.AssertionError: Unable to click element : Select model drop down  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (699, 1154)
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.A152E9A7F2747A80AF8B0F0705D7FFB6.e.1919}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.verify_all_emi_option(BikeFeaturePage.java:291)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.verify_all_emi_option(BikeFeatureTest.java:70)
+	at ✽.Verify all EMI option(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:23)
+</pre></div></td>
+<td>11</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Glamour" bike feature under "executive" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Executive icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (716, 106). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.3C2C473CE4BA6DC5C5B37E66CB572F14.e.1243}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_executive_icons(LoginPage.java:529)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:176)
+	at ✽.Click on &quot;executive&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace668964635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace668964635'><pre>java.lang.AssertionError: Unable to click element : Executive icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (716, 106). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.3C2C473CE4BA6DC5C5B37E66CB572F14.e.1243}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_executive_icons(LoginPage.java:529)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:176)
+	at ✽.Click on &quot;executive&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+</pre></div></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_001 Successfully click on About Hero icon", "AboutHero"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1750324987", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1750324987'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Thriller_160R_4V" bike feature under "Premium" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Select model drop down  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (699, 1122)
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.84AB60192E4D8AA2EA493D8916A892B9.e.1749}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.verify_all_emi_option(BikeFeaturePage.java:291)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.verify_all_emi_option(BikeFeatureTest.java:70)
+	at ✽.Verify all EMI option(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:23)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1157977516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1157977516'><pre>java.lang.AssertionError: Unable to click element : Select model drop down  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (699, 1122)
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.84AB60192E4D8AA2EA493D8916A892B9.e.1749}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.verify_all_emi_option(BikeFeaturePage.java:291)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.verify_all_emi_option(BikeFeatureTest.java:70)
+	at ✽.Verify all EMI option(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:23)
+</pre></div></td>
+<td>31</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "MAESTRO_EDGE_XTEC" bike feature under "Scooter" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : MAESTRO EDGE XTEC  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: //div[normalize-space()=&apos;MAESTRO EDGE XTEC&apos;]]  --  org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.F484375062881455E1C193C71DB2D1BF.e.2556}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: //div[normalize-space()=&apos;MAESTRO EDGE XTEC&apos;]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.click_on_maestro_edge_xtec_scooter_name(BikeFeaturePage.java:288)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_bike_name(BikeFeatureTest.java:234)
+	at ✽.Click on &quot;MAESTRO_EDGE_XTEC&quot; bike name(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:13)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace926720566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace926720566'><pre>java.lang.AssertionError: Unable to click element : MAESTRO EDGE XTEC  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: //div[normalize-space()=&apos;MAESTRO EDGE XTEC&apos;]]  --  org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.F484375062881455E1C193C71DB2D1BF.e.2556}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: //div[normalize-space()=&apos;MAESTRO EDGE XTEC&apos;]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.click_on_maestro_edge_xtec_scooter_name(BikeFeaturePage.java:288)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_bike_name(BikeFeatureTest.java:234)
+	at ✽.Click on &quot;MAESTRO_EDGE_XTEC&quot; bike name(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:13)
+</pre></div></td>
+<td>314</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_001 Successfully click on dealers icon", "Service"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314589328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314589328'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Passion_XPRO" bike feature under "commuter" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Commuter icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (577, 102). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.1E0EA12B2A89E345F10ACE587D038BFE.e.963}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_commuter_icons(LoginPage.java:520)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:173)
+	at ✽.Click on &quot;commuter&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace532482128", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace532482128'><pre>java.lang.AssertionError: Unable to click element : Commuter icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (577, 102). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.1E0EA12B2A89E345F10ACE587D038BFE.e.963}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_commuter_icons(LoginPage.java:520)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:173)
+	at ✽.Click on &quot;commuter&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+</pre></div></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Hunk_150R" bike feature under "Premium" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Select model drop down  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (699, 1178)
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.BCBDEC0B6862B16024C02BD13ADB4895.e.2071}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.verify_all_emi_option(BikeFeaturePage.java:291)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.verify_all_emi_option(BikeFeatureTest.java:70)
+	at ✽.Verify all EMI option(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:23)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace344658917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace344658917'><pre>java.lang.AssertionError: Unable to click element : Select model drop down  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (699, 1178)
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.BCBDEC0B6862B16024C02BD13ADB4895.e.2071}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//button[@data-bs-toggle=&apos;dropdown&apos;])[2]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.BikeFeaturePage.verify_all_emi_option(BikeFeaturePage.java:291)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.verify_all_emi_option(BikeFeatureTest.java:70)
+	at ✽.Verify all EMI option(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:23)
+</pre></div></td>
+<td>21</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Ignitor_XTEC" bike feature under "executive" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Executive icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (716, 105). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.A145CEE806F39C1655ACBE5994A3551E.e.1555}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_executive_icons(LoginPage.java:529)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:176)
+	at ✽.Click on &quot;executive&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781215417", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781215417'><pre>java.lang.AssertionError: Unable to click element : Executive icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (716, 105). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.A145CEE806F39C1655ACBE5994A3551E.e.1555}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;EXECUTIVE&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_executive_icons(LoginPage.java:529)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:176)
+	at ✽.Click on &quot;executive&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+</pre></div></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_001 Successfully click on Hero world icon", "HeroWorld"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2100628172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2100628172'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>27</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Splendor+SE" bike feature under "commuter" icon", "BikeFeature"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Commuter icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (577, 106). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.5C9D3B9DC38BC3438C084683A96937FE.e.694}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_commuter_icons(LoginPage.java:520)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:173)
+	at ✽.Click on &quot;commuter&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace708956538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace708956538'><pre>java.lang.AssertionError: Unable to click element : Commuter icon  --  [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span data-shimmer-effect=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (577, 106). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.72)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5d37d99cf43f512650459bd2aa5f70, clickElement {id=f.D06AF8B4F8C72A2E49CB15900CEB7694.d.5C9D3B9DC38BC3438C084683A96937FE.e.694}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.72, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54683/devtoo..., se:cdpVersion: 129.0.6668.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5d37d99cf43f512650459bd2aa5f70)] -&gt; xpath: (//span[normalize-space()=&apos;COMMUTER&apos;])[1]]
+Session ID: ac5d37d99cf43f512650459bd2aa5f70 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:34)
+	at GB_Webapp.Page.LoginPage.click_on_commuter_icons(LoginPage.java:520)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_icons(BikeFeatureTest.java:173)
+	at ✽.Click on &quot;commuter&quot; icons(file:///C:/Users/QA/OneDrive/Documents/Azure/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:12)
+</pre></div></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_002 Successfully click on service icon", "Service"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1127850725", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1127850725'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;close browser&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@Then(&quot;close browser&quot;)
+public void close_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at jdk.internal.reflect.GeneratedMethodAccessor83.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>16</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Splender+_XTEC" bike feature under "commuter" icon", "BikeFeature"</td>
+<td></td>
+<td>20</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_003 Successfully verify all tabbar icons", "AdminLogin"</td>
+<td></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Hf_Deluxe" bike feature under "commuter" icon", "BikeFeature"</td>
+<td></td>
+<td>26</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_007 Successfully verify bike under Commuter icons", "AdminLogin"</td>
+<td></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_001 Successfully open global website link", "AdminLogin"</td>
+<td></td>
+<td>10</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Thriller_160R" bike feature under "Premium" icon", "BikeFeature"</td>
+<td></td>
+<td>33</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_008 Successfully verify bike under Executive icons", "AdminLogin"</td>
+<td></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_002 Successfully open bangladesh global website link", "AdminLogin"</td>
+<td></td>
+<td>7</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_005 Successfully verify product icons", "AdminLogin"</td>
+<td></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Ignitor_techno" bike feature under "executive" icon", "BikeFeature"</td>
+<td></td>
+<td>28</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_009 Successfully verify bike under Premium icons", "AdminLogin"</td>
+<td></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_006 Successfully verify bike under New launch icons", "AdminLogin"</td>
+<td></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_010 Successfully verify bike under Scooter icons", "AdminLogin"</td>
+<td></td>
+<td>3</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Passion_XPRO_XTEC" bike feature under "commuter" icon", "BikeFeature"</td>
+<td></td>
+<td>92</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully verify "Pleasure" bike feature under "Scooter" icon", "BikeFeature"</td>
+<td></td>
+<td>12</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_004 Successfully verify all product image icons", "AdminLogin"</td>
+<td></td>
+<td>6</td>
+<td>GB_Webapp.TestRunner.Bangladesh@333d4a8c</td></tr>
+</table><p>
+</body>
+</html>

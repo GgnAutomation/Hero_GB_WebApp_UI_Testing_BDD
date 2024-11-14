@@ -1,0 +1,3817 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hero-GB Test Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Hero-GB Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Nov 13, 2024 11:38:53 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@HomePage</a><a class="dropdown-item" href="#">@AboutHero</a><a class="dropdown-item" href="#">@HeroWorld</a><a class="dropdown-item" href="#">@BikeFeatureTest</a><a class="dropdown-item" href="#">@Service</a><a class="dropdown-item" href="#">@Bangladesh</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HomePage</p>
+            <p class="text-sm">
+              <span>11:39:00 am</span> / <span>00:00:37:631</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HomePage</h5>
+<span class='badge badge-success'>11.13.2024 11:39:00 am</span>
+<span class='badge badge-danger'>11.13.2024 11:39:38 am</span>
+<span class='badge badge-default'>00:00:37:631</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_001 Successfully open global website link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_all_country_should_be_displayed()">
+                <span>When Verify all country should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>Then Close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>TC_002 Successfully open bangladesh global website link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.country_name_should_be_displayed()">
+                <span>When country name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>Then Close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="28"><span class="badge log pass-bg mr-2">Pass</span>TC_003 Successfully verify all tabbar icons</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>Given "Company_logo" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>And "Product" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>And "Dealers" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>And "Service" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>And "Hero_world" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>And "About_hero" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>TC_004 Successfully verify all product image icons</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_icons(java.lang.String)">
+                <span>When "Company_logo" icon name should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on_banner(java.lang.String)">
+                <span>And Click on banner "All_banner_icon"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="69"><span class="badge log pass-bg mr-2">Pass</span>TC_005 Successfully verify product icons</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>Given Click on "Product"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>When "New_launch" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>And "Commuter" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>And "Excutive" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>And "premium_world" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>And "Scooter" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>And "Find_a_dealer" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.icon_name_it_should_be_displayed(java.lang.String)">
+                <span>And "Find_a_service_center" icon name it should be displayed</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="100"><span class="badge log fail-bg mr-2">Fail</span>TC_006 Successfully verify bike under New launch icons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>Given Click on "Product"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link showMegaMenuContainer ps-lg-0 active" href="javascript:void(0)" aa-data-attr="track_cta" aria-haspopup="true" aria-expanded="false" value="productsMegaMenu">...</a> is not clickable at point (555, 30). Other element would receive the click: <div class="modal-popup modal-large book-bike-ride request-callback" id="requestCallBackModel">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on "Product"(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:48)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>TC_006 Successfully verify bike under New launch icons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>When Click on "New_launch_icons"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Bike_name" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Bike_Price" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="119"><span class="badge log fail-bg mr-2">Fail</span>TC_007 Successfully verify bike under Commuter icons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>Given Click on "Product"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link showMegaMenuContainer ps-lg-0 active" href="javascript:void(0)" aa-data-attr="track_cta" aria-haspopup="true" aria-expanded="false" value="productsMegaMenu">...</a> is not clickable at point (555, 30). Other element would receive the click: <div class="modal-popup modal-large book-bike-ride request-callback" id="requestCallBackModel">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on "Product"(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:56)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>TC_007 Successfully verify bike under Commuter icons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>When Click on "commuter_icons"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>Then Verify "HF_Deluxe_bike_name" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "HF_Deluxe_bike_price" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Splender+SE_bike_name" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Splender+SE_bike_price" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Splender+XTEC_bike_name" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Splender+XTEC_bike_price" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Passion_XPRO_bike_name" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Passion_XPRO_price" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Passion_XPRO_XTEC_bike_name" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_should_be_displayed(java.lang.String)">
+                <span>And Verify "Passion_XPRO_XTEC_bike_price" should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="162"><span class="badge log fail-bg mr-2">Fail</span>TC_008 Successfully verify bike under Executive icons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>Given Click on "Product"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link showMegaMenuContainer ps-lg-0 active" href="javascript:void(0)" aa-data-attr="track_cta" aria-haspopup="true" aria-expanded="false" value="productsMegaMenu">...</a> is not clickable at point (555, 30). Other element would receive the click: <div class="modal-popup modal-large book-bike-ride request-callback" id="requestCallBackModel">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on "Product"(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:72)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>TC_008 Successfully verify bike under Executive icons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded3.png' src="test-output/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>When Click on "executive_icons"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_glamour_bike_name_should_be_displayed()">
+                <span>Then Verify Glamour bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_glamour_bike_price_should_be_displayed()">
+                <span>And Verify Glamour bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_ignitor_techno_bike_name_should_be_displayed()">
+                <span>Then Verify Ignitor techno bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_ignitor_techno_bike_price_should_be_displayed()">
+                <span>And Verify Ignitor techno bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_ignitor_xtec_bike_name_should_be_displayed()">
+                <span>Then Verify Ignitor Xtec bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_ignitor_xtec_bike_price_should_be_displayed()">
+                <span>And Verify Ignitor Xtec bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="193"><span class="badge log fail-bg mr-2">Fail</span>TC_009 Successfully verify bike under Premium icons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>Given Click on "Product"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link showMegaMenuContainer ps-lg-0 active" href="javascript:void(0)" aa-data-attr="track_cta" aria-haspopup="true" aria-expanded="false" value="productsMegaMenu">...</a> is not clickable at point (555, 30). Other element would receive the click: <div class="modal-popup modal-large book-bike-ride request-callback" id="requestCallBackModel">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on "Product"(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:84)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>TC_009 Successfully verify bike under Premium icons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded4.png' src="test-output/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>When Click on "Premium_icons"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_thriller_160r_4v_bike_name_should_be_displayed()">
+                <span>Then Verify Thriller 160R 4v bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_thriller_160r_4v_bike_price_should_be_displayed()">
+                <span>And Verify Thriller 160R 4v bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_hunk_bike_name_should_be_displayed(java.lang.Integer)">
+                <span>Then Verify Hunk 150 bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_hunk_bike_price_should_be_displayed(java.lang.Integer)">
+                <span>And Verify Hunk 150 bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_hunk_150r_bike_name_should_be_displayed()">
+                <span>Then Verify Hunk 150R bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_hunk_150r_bike_price_should_be_displayed()">
+                <span>And Verify Hunk 150R bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_thriller_160r_bike_name_should_be_displayed()">
+                <span>Then Verify Thriller 160R bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_thriller_160r_bike_price_should_be_displayed()">
+                <span>And Verify Thriller 160R bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="230"><span class="badge log fail-bg mr-2">Fail</span>TC_010 Successfully verify bike under Scooter icons</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>Given Click on "Product"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link showMegaMenuContainer ps-lg-0 active" href="javascript:void(0)" aa-data-attr="track_cta" aria-haspopup="true" aria-expanded="false" value="productsMegaMenu">...</a> is not clickable at point (555, 30). Other element would receive the click: <div class="modal-popup modal-large book-bike-ride request-callback" id="requestCallBackModel">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -> xpath: //a[normalize-space()='PRODUCTS']]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on "Product"(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:98)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>TC_010 Successfully verify bike under Scooter icons
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded5.png' src="test-output/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>When Click on "Scooter_icons"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_pleasure_bike_name_should_be_displayed()">
+                <span>Then Verify Pleasure bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_pleasure_bike_price_should_be_displayed()">
+                <span>And Verify Pleasure bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_maestro_edge_xtec_bike_name_should_be_displayed()">
+                <span>Then Verify Maestro edge XTEC bike name should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.verify_maestro_edge_xtec_bike_price_should_be_displayed()">
+                <span>And Verify Maestro edge XTEC bike price should be displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="255"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Bangladesh BikeFeature</p>
+            <p class="text-sm">
+              <span>11:39:38 am</span> / <span>00:04:33:213</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Bangladesh BikeFeature</h5>
+<span class='badge badge-success'>11.13.2024 11:39:38 am</span>
+<span class='badge badge-danger'>11.13.2024 11:44:11 am</span>
+<span class='badge badge-default'>00:04:33:213</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=255</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="256"><span class="badge log fail-bg mr-2">Fail</span><TC_Num> Successfully verify <Bike_Name> bike feature under <Icon_Name> icon</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="257"><span class="badge log pass-bg mr-2">Pass</span>TC_011 Successfully verify Hf_Deluxe bike feature under commuter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "commuter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Hf_Deluxe" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "commuter" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="306"><span class="badge log pass-bg mr-2">Pass</span>TC_012 Successfully verify Splendor+SE bike feature under commuter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "commuter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Splendor+SE" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "commuter" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="355"><span class="badge log pass-bg mr-2">Pass</span>TC_013 Successfully verify Splender+_XTEC bike feature under commuter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "commuter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Splender+_XTEC" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "commuter" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="404"><span class="badge log pass-bg mr-2">Pass</span>TC_014 Successfully verify Passion_XPRO bike feature under commuter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "commuter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Passion_XPRO" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "commuter" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="453"><span class="badge log pass-bg mr-2">Pass</span>TC_015 Successfully verify Passion_XPRO_XTEC bike feature under commuter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "commuter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Passion_XPRO_XTEC" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "commuter" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="502"><span class="badge log pass-bg mr-2">Pass</span>TC_016 Successfully verify Glamour bike feature under executive icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "executive" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Glamour" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "executive" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="551"><span class="badge log pass-bg mr-2">Pass</span>TC_017 Successfully verify Ignitor_techno bike feature under executive icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "executive" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Ignitor_techno" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "executive" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="600"><span class="badge log pass-bg mr-2">Pass</span>TC_018 Successfully verify Ignitor_XTEC bike feature under executive icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "executive" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Ignitor_XTEC" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "executive" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="649"><span class="badge log pass-bg mr-2">Pass</span>TC_019 Successfully verify Thriller_160R_4V bike feature under Premium icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "Premium" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Thriller_160R_4V" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "Premium" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="698"><span class="badge log pass-bg mr-2">Pass</span>TC_020 Successfully verify Hunk_150 bike feature under Premium icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "Premium" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Hunk_150" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "Premium" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="747"><span class="badge log pass-bg mr-2">Pass</span>TC_021 Successfully verify Hunk_150R bike feature under Premium icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "Premium" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Hunk_150R" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "Premium" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="796"><span class="badge log pass-bg mr-2">Pass</span>TC_022 Successfully verify Thriller_160R bike feature under Premium icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "Premium" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Thriller_160R" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "Premium" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="845"><span class="badge log pass-bg mr-2">Pass</span>TC_023 Successfully verify Pleasure bike feature under Scooter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "Scooter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on "Pleasure" bike name</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on highlights "Scooter" icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Colours icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on price icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify bike price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on specifications icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on EMI icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Verify all EMI option</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Close browser</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="894"><span class="badge log fail-bg mr-2">Fail</span>TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given User open "Bangladesh" website link</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on "Product"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Click on "Scooter" icons</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And Click on "MAESTRO_EDGE_XTEC" bike name</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, findElement {using=xpath, value=//div[normalize-space()='MAESTRO EDGE XTEC']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy49.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4507)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at GB_Webapp.Utility.Library.click(Library.java:36)
+	at GB_Webapp.Page.BikeFeaturePage.click_on_maestro_edge_xtec_scooter_name(BikeFeaturePage.java:289)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_bike_name(BikeFeatureTest.java:232)
+	at ✽.Click on "MAESTRO_EDGE_XTEC" bike name(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:13)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at GB_Webapp.Utility.BaseTest.addScreenshot(BaseTest.java:205)
+	at GB_Webapp.StepDefinition.BaseClass.After_Step(BaseClass.java:47)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on highlights "Scooter" icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on Colours icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify bike multiple colours</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on price icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify bike price</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on specifications icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify multiple specificatios</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on EMI icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Verify all EMI option</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on Gallery icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="943"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Service</p>
+            <p class="text-sm">
+              <span>11:44:11 am</span> / <span>00:01:31:119</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Service</h5>
+<span class='badge badge-success'>11.13.2024 11:44:11 am</span>
+<span class='badge badge-danger'>11.13.2024 11:45:42 am</span>
+<span class='badge badge-default'>00:01:31:119</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=943</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="944"><span class="badge log fail-bg mr-2">Fail</span>TC_025 Successfully click on dealers icon</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open "Bangladesh" website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/03_Service.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at GB_Webapp.Utility.BaseTest.addScreenshot(BaseTest.java:205)
+	at GB_Webapp.StepDefinition.BaseClass.After_Step(BaseClass.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_dealers_icon()">
+                <span>When Click on dealers icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.verify_locate_a_dealer_page_text()">
+                <span>Then Verify locate a dealer page text</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.verify_category_dropdown()">
+                <span>And Verify category dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.verify_district_dropdown()">
+                <span>And Verify district dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.verify_search_button()">
+                <span>And Verify Search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="969"><span class="badge log fail-bg mr-2">Fail</span>TC_026 Successfully click on service icon</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open "Bangladesh" website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/03_Service.feature:17)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at GB_Webapp.Utility.BaseTest.addScreenshot(BaseTest.java:205)
+	at GB_Webapp.StepDefinition.BaseClass.After_Step(BaseClass.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_service_icon()">
+                <span>When Click on service icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_maintenance_tips_icon()">
+                <span>Then Click on Maintenance Tips icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_warranty_icon()">
+                <span>And Click on warranty icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_two_wheeler_tips_icon()">
+                <span>And Click on two wheeler tips icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_owners_manual_icon()">
+                <span>And Click on owners manual icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_hero_joy_ride_icon()">
+                <span>And Click on hero joy ride icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_diy_videos_icon()">
+                <span>And Click on Diy videos icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.ServiceTest.click_on_hero_genuine_parts_icon()">
+                <span>And Click on Hero genuine parts icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="1,003"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">HeroWorld</p>
+            <p class="text-sm">
+              <span>11:45:42 am</span> / <span>00:00:42:566</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">HeroWorld</h5>
+<span class='badge badge-success'>11.13.2024 11:45:42 am</span>
+<span class='badge badge-danger'>11.13.2024 11:46:25 am</span>
+<span class='badge badge-default'>00:00:42:566</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1,003</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="1,004"><span class="badge log fail-bg mr-2">Fail</span>TC_027 Successfully click on Hero world icon</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open "Bangladesh" website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/04_HeroWorld.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.RuntimeException: Unexpected result for screenshot command: null
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:334)
+	at GB_Webapp.Utility.BaseTest.addScreenshot(BaseTest.java:205)
+	at GB_Webapp.StepDefinition.BaseClass.After_Step(BaseClass.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.click_on_hero_world_icon()">
+                <span>When Click on Hero world icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.click_on_hero_news_icon()">
+                <span>Then Click on Hero News icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.verify_news()">
+                <span>And Verify news</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.click_on_amaar_hero_icon()">
+                <span>And Click on Amaar hero icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.verify_new_window_and_close()">
+                <span>And Verify new window and close</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.click_on_hero_joyride_icon()">
+                <span>And Click on Hero Joyride icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.verify_hero_joyride_page()">
+                <span>And Verify hero joyride page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.c_lick_on_blogs_icon()">
+                <span>And CLick on Blogs icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.HeroWorldTest.verify_blogs_page()">
+                <span>And Verify blogs page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="1,041"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AboutHero</p>
+            <p class="text-sm">
+              <span>11:46:25 am</span> / <span>00:00:00:518</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AboutHero</h5>
+<span class='badge badge-success'>11.13.2024 11:46:25 am</span>
+<span class='badge badge-danger'>11.13.2024 11:46:25 am</span>
+<span class='badge badge-default'>00:00:00:518</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1,041</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="1,042"><span class="badge log fail-bg mr-2">Fail</span>TC_028 Successfully click on About Hero icon</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(java.lang.String)">
+                <span>Given User open "Bangladesh" website link</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open "Bangladesh" website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/05_AboutHero.feature:7)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:675)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:679)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:325)
+	at GB_Webapp.Utility.BaseTest.addScreenshot(BaseTest.java:205)
+	at GB_Webapp.StepDefinition.BaseClass.After_Step(BaseClass.java:47)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.click_on(java.lang.String)">
+                <span>When Click on "About_hero"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.click_on_about_hero_page()">
+                <span>Then Click on About Hero page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.verify_about_hero_page_in_new_window_and_close()">
+                <span>And Verify About Hero page in new window and close</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.click_on_about_niloy_bangladesh_ltd_icon()">
+                <span>And Click on About Niloy Bangladesh Ltd icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.verify_about_niloy_bangladesh_ltd_page()">
+                <span>And Verify About Niloy Bangladesh Ltd page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.click_on_reach_us_icon()">
+                <span>And Click on Reach us icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.verify_reach_us_page()">
+                <span>And Verify Reach us page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.click_on_become_a_delear_icon()">
+                <span>And Click on Become a delear icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.verify_become_a_delear_page()">
+                <span>And Verify Become a delear page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.click_on_investor_icon()">
+                <span>And Click on investor icon</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.AboutHeroTest.verify_investor_page()">
+                <span>And Verify investor page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="GB_Webapp.StepDefinition.LoginPageTest.close_browser()">
+                <span>And Close browser</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:46:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1,041' id='1,046'>Given User open "Bangladesh" website link</a>
+<div class="">
+<span class="badge badge-default">AboutHero.TC_028 Successfully click on About Hero icon.Given User open "Bangladesh" website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:46:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1,041' id='1,047'>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">AboutHero.TC_028 Successfully click on About Hero icon.GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>7</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>7 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:43:23 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='907'>And Click on "MAESTRO_EDGE_XTEC" bike name</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon.And Click on "MAESTRO_EDGE_XTEC" bike name</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:43:56 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='908'>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon.GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:11 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='948'>Given User open "Bangladesh" website link</a>
+<div class="">
+<span class="badge badge-default">Service.TC_025 Successfully click on dealers icon.Given User open "Bangladesh" website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:41 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='949'>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Service.TC_025 Successfully click on dealers icon.GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:57 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='973'>Given User open "Bangladesh" website link</a>
+<div class="">
+<span class="badge badge-default">Service.TC_026 Successfully click on service icon.Given User open "Bangladesh" website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:45:27 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='974'>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Service.TC_026 Successfully click on service icon.GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:45:42 am</td>
+<td>
+<a href="#" class="linked" test-id='1,003' id='1,008'>Given User open "Bangladesh" website link</a>
+<div class="">
+<span class="badge badge-default">HeroWorld.TC_027 Successfully click on Hero world icon.Given User open "Bangladesh" website link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.RuntimeException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.RuntimeException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:46:13 am</td>
+<td>
+<a href="#" class="linked" test-id='1,003' id='1,009'>GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">HeroWorld.TC_027 Successfully click on Hero world icon.GB_Webapp.StepDefinition.BaseClass.After_Step(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='104'>Given Click on "Product"</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_006 Successfully verify bike under New launch icons.Given Click on "Product"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:29 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='123'>Given Click on "Product"</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_007 Successfully verify bike under Commuter icons.Given Click on "Product"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='166'>Given Click on "Product"</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_008 Successfully verify bike under Executive icons.Given Click on "Product"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:34 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='197'>Given Click on "Product"</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_009 Successfully verify bike under Premium icons.Given Click on "Product"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:36 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='234'>Given Click on "Product"</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_010 Successfully verify bike under Scooter icons.Given Click on "Product"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+<span class='badge log badge-danger'>5</span>
+</span>
+<p class="name">@HomePage</p>
+<p class="duration text-sm">10 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HomePage</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:00 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC_001 Successfully open global website link</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_001 Successfully open global website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:08 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>TC_002 Successfully open bangladesh global website link</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_002 Successfully open bangladesh global website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>TC_003 Successfully verify all tabbar icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_003 Successfully verify all tabbar icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:14 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>TC_004 Successfully verify all product image icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_004 Successfully verify all product image icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>TC_005 Successfully verify product icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_005 Successfully verify product icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>TC_006 Successfully verify bike under New launch icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_006 Successfully verify bike under New launch icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:29 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='119'>TC_007 Successfully verify bike under Commuter icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_007 Successfully verify bike under Commuter icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='162'>TC_008 Successfully verify bike under Executive icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_008 Successfully verify bike under Executive icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:34 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='193'>TC_009 Successfully verify bike under Premium icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_009 Successfully verify bike under Premium icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:36 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='230'>TC_010 Successfully verify bike under Scooter icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_010 Successfully verify bike under Scooter icons</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@AboutHero</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@AboutHero</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:46:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1,041' id='1,042'>TC_028 Successfully click on About Hero icon</a>
+<div class="">
+<span class="badge badge-default">AboutHero.TC_028 Successfully click on About Hero icon</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@HeroWorld</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@HeroWorld</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:45:42 am</td>
+<td>
+<a href="#" class="linked" test-id='1,003' id='1,004'>TC_027 Successfully click on Hero world icon</a>
+<div class="">
+<span class="badge badge-default">HeroWorld.TC_027 Successfully click on Hero world icon</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>13</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@BikeFeatureTest</p>
+<p class="duration text-sm">15 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@BikeFeatureTest</h4>
+<span status="pass" class='badge log pass-bg'>13 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:38 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='256'><TC_Num> Successfully verify <Bike_Name> bike feature under <Icon_Name> icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.<TC_Num> Successfully verify <Bike_Name> bike feature under <Icon_Name> icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:38 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='257'>TC_011 Successfully verify Hf_Deluxe bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_011 Successfully verify Hf_Deluxe bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:57 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='306'>TC_012 Successfully verify Splendor+SE bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_012 Successfully verify Splendor+SE bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:40:15 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='355'>TC_013 Successfully verify Splender+_XTEC bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_013 Successfully verify Splender+_XTEC bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:40:31 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='404'>TC_014 Successfully verify Passion_XPRO bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_014 Successfully verify Passion_XPRO bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:40:47 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='453'>TC_015 Successfully verify Passion_XPRO_XTEC bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_015 Successfully verify Passion_XPRO_XTEC bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:06 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='502'>TC_016 Successfully verify Glamour bike feature under executive icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_016 Successfully verify Glamour bike feature under executive icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:23 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='551'>TC_017 Successfully verify Ignitor_techno bike feature under executive icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_017 Successfully verify Ignitor_techno bike feature under executive icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:41 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='600'>TC_018 Successfully verify Ignitor_XTEC bike feature under executive icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_018 Successfully verify Ignitor_XTEC bike feature under executive icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:57 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='649'>TC_019 Successfully verify Thriller_160R_4V bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_019 Successfully verify Thriller_160R_4V bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:42:13 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='698'>TC_020 Successfully verify Hunk_150 bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_020 Successfully verify Hunk_150 bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:42:29 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='747'>TC_021 Successfully verify Hunk_150R bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_021 Successfully verify Hunk_150R bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:42:46 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='796'>TC_022 Successfully verify Thriller_160R bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_022 Successfully verify Thriller_160R bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:43:05 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='845'>TC_023 Successfully verify Pleasure bike feature under Scooter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_023 Successfully verify Pleasure bike feature under Scooter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:43:20 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='894'>TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Service</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Service</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:11 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='944'>TC_025 Successfully click on dealers icon</a>
+<div class="">
+<span class="badge badge-default">Service.TC_025 Successfully click on dealers icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:57 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='969'>TC_026 Successfully click on service icon</a>
+<div class="">
+<span class="badge badge-default">Service.TC_026 Successfully click on service icon</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>18</span>
+<span class='badge log badge-danger'>11</span>
+</span>
+<p class="name">@Bangladesh</p>
+<p class="duration text-sm">29 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Bangladesh</h4>
+<span status="pass" class='badge log pass-bg'>18 passed</span>
+<span status="fail" class='badge log badge-danger'>11 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:00 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC_001 Successfully open global website link</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_001 Successfully open global website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:08 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>TC_002 Successfully open bangladesh global website link</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_002 Successfully open bangladesh global website link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>TC_003 Successfully verify all tabbar icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_003 Successfully verify all tabbar icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:14 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='53'>TC_004 Successfully verify all product image icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_004 Successfully verify all product image icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='69'>TC_005 Successfully verify product icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_005 Successfully verify product icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:27 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='100'>TC_006 Successfully verify bike under New launch icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_006 Successfully verify bike under New launch icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:29 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='119'>TC_007 Successfully verify bike under Commuter icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_007 Successfully verify bike under Commuter icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:32 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='162'>TC_008 Successfully verify bike under Executive icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_008 Successfully verify bike under Executive icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:34 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='193'>TC_009 Successfully verify bike under Premium icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_009 Successfully verify bike under Premium icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:36 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='230'>TC_010 Successfully verify bike under Scooter icons</a>
+<div class="">
+<span class="badge badge-default">HomePage.TC_010 Successfully verify bike under Scooter icons</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:39:38 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='256'><TC_Num> Successfully verify <Bike_Name> bike feature under <Icon_Name> icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.<TC_Num> Successfully verify <Bike_Name> bike feature under <Icon_Name> icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:38 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='257'>TC_011 Successfully verify Hf_Deluxe bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_011 Successfully verify Hf_Deluxe bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:39:57 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='306'>TC_012 Successfully verify Splendor+SE bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_012 Successfully verify Splendor+SE bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:40:15 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='355'>TC_013 Successfully verify Splender+_XTEC bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_013 Successfully verify Splender+_XTEC bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:40:31 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='404'>TC_014 Successfully verify Passion_XPRO bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_014 Successfully verify Passion_XPRO bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:40:47 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='453'>TC_015 Successfully verify Passion_XPRO_XTEC bike feature under commuter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_015 Successfully verify Passion_XPRO_XTEC bike feature under commuter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:06 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='502'>TC_016 Successfully verify Glamour bike feature under executive icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_016 Successfully verify Glamour bike feature under executive icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:23 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='551'>TC_017 Successfully verify Ignitor_techno bike feature under executive icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_017 Successfully verify Ignitor_techno bike feature under executive icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:41 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='600'>TC_018 Successfully verify Ignitor_XTEC bike feature under executive icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_018 Successfully verify Ignitor_XTEC bike feature under executive icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:41:57 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='649'>TC_019 Successfully verify Thriller_160R_4V bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_019 Successfully verify Thriller_160R_4V bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:42:13 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='698'>TC_020 Successfully verify Hunk_150 bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_020 Successfully verify Hunk_150 bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:42:29 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='747'>TC_021 Successfully verify Hunk_150R bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_021 Successfully verify Hunk_150R bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:42:46 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='796'>TC_022 Successfully verify Thriller_160R bike feature under Premium icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_022 Successfully verify Thriller_160R bike feature under Premium icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:43:05 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='845'>TC_023 Successfully verify Pleasure bike feature under Scooter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_023 Successfully verify Pleasure bike feature under Scooter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:43:20 am</td>
+<td>
+<a href="#" class="linked" test-id='255' id='894'>TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon</a>
+<div class="">
+<span class="badge badge-default">Bangladesh BikeFeature.TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:11 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='944'>TC_025 Successfully click on dealers icon</a>
+<div class="">
+<span class="badge badge-default">Service.TC_025 Successfully click on dealers icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:44:57 am</td>
+<td>
+<a href="#" class="linked" test-id='943' id='969'>TC_026 Successfully click on service icon</a>
+<div class="">
+<span class="badge badge-default">Service.TC_026 Successfully click on service icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:45:42 am</td>
+<td>
+<a href="#" class="linked" test-id='1,003' id='1,004'>TC_027 Successfully click on Hero world icon</a>
+<div class="">
+<span class="badge badge-default">HeroWorld.TC_027 Successfully click on Hero world icon</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:46:25 am</td>
+<td>
+<a href="#" class="linked" test-id='1,041' id='1,042'>TC_028 Successfully click on About Hero icon</a>
+<div class="">
+<span class="badge badge-default">AboutHero.TC_028 Successfully click on About Hero icon</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Nov 13, 2024 11:38:53 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Nov 13, 2024 11:46:26 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>5</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>5</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='64%'><b>18</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='35%'><b>10</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='68%'><b>229</b> steps passed</small></div>
+<div>
+<small data-tooltip='4%'><b>15</b> steps failed,
+<b>88</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"HomePage":37.631,"Bangladesh BikeFeature":273.213,"Service":91.119,"HeroWorld":42.566,"AboutHero":0.518
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@HomePage</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>@AboutHero</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@HeroWorld</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@BikeFeatureTest</td>
+<td>13</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>86.667%</td>
+</tr>
+<tr>
+<td>@Service</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Bangladesh</td>
+<td>18</td>
+<td>11</td>
+<td>0</td>
+<td>0</td>
+<td>62.069%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>AppName</td>
+<td>Hero-GB WebAPP</td>
+</tr>
+<tr>
+<td>TestEnginer</td>
+<td>Prathmesh Mahure</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>WebApplication</td>
+</tr>
+<tr>
+<td>TestEnvironment</td>
+<td>UAT</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 5,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 18,
+failChild: 10,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 229,
+failGrandChild: 15,
+warningGrandChild: 0,
+skipGrandChild: 88,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

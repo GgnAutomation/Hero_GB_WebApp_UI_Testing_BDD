@@ -1,0 +1,637 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/10/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 13 11:38:52 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>453 seconds (453631 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_024 Successfully verify MAESTRO_EDGE_XTEC bike feature under Scooter icon", "Bangladesh BikeFeature"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, findElement {using=xpath, value=//div[normalize-space()=&apos;MAESTRO EDGE XTEC&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy49.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4507)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at GB_Webapp.Utility.Library.click(Library.java:36)
+	at GB_Webapp.Page.BikeFeaturePage.click_on_maestro_edge_xtec_scooter_name(BikeFeaturePage.java:289)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_bike_name(BikeFeatureTest.java:232)
+	at ✽.Click on &quot;MAESTRO_EDGE_XTEC&quot; bike name(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace513338952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace513338952'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, findElement {using=xpath, value=//div[normalize-space()=&apos;MAESTRO EDGE XTEC&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy49.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4507)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
+	at GB_Webapp.Utility.Library.click(Library.java:36)
+	at GB_Webapp.Page.BikeFeaturePage.click_on_maestro_edge_xtec_scooter_name(BikeFeaturePage.java:289)
+	at GB_Webapp.StepDefinition.BikeFeatureTest.click_on_bike_name(BikeFeatureTest.java:232)
+	at ✽.Click on &quot;MAESTRO_EDGE_XTEC&quot; bike name(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/02_BikeFeature.feature:13)
+</pre></div></td>
+<td>50</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_008 Successfully verify bike under Executive icons", "HomePage"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:72)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1316049331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1316049331'><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:72)
+</pre></div></td>
+<td>1</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_027 Successfully click on Hero world icon", "HeroWorld"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/04_HeroWorld.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace924598510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace924598510'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/04_HeroWorld.feature:7)
+</pre></div></td>
+<td>42</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_026 Successfully click on service icon", "Service"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/03_Service.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1331799044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1331799044'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/03_Service.feature:17)
+</pre></div></td>
+<td>45</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_028 Successfully click on About Hero icon", "AboutHero"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/05_AboutHero.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1922160775", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1922160775'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/05_AboutHero.feature:7)
+</pre></div></td>
+<td>0</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_010 Successfully verify bike under Scooter icons", "HomePage"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:98)
+</pre></div><a href='#' onClick='toggleBox("stack-trace608709199", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608709199'><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:98)
+</pre></div></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_009 Successfully verify bike under Premium icons", "HomePage"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1433068064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1433068064'><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:84)
+</pre></div></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_025 Successfully click on dealers icon", "Service"</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/03_Service.feature:7)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1036263854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1036263854'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 15.000
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b507ee119f5321c0d93021ee6d6d8773
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:467)
+	at GB_Webapp.Utility.Library.open_new_Window_and_close_previous_Window(Library.java:307)
+	at GB_Webapp.Page.LoginPage.user_open_website_link(LoginPage.java:373)
+	at GB_Webapp.StepDefinition.HomePageTest.user_open_website_link(HomePageTest.java:16)
+	at ✽.User open &quot;Bangladesh&quot; website link(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/03_Service.feature:7)
+</pre></div></td>
+<td>45</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_007 Successfully verify bike under Commuter icons", "HomePage"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:56)
+</pre></div><a href='#' onClick='toggleBox("stack-trace23862545", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23862545'><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:56)
+</pre></div></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_006 Successfully verify bike under New launch icons", "HomePage"</td>
+<td><div><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:48)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1461482866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1461482866'><pre>java.lang.AssertionError: Unable to click element : Product icon  --  [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]  --  org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;nav-link showMegaMenuContainer ps-lg-0 active&quot; href=&quot;javascript:void(0)&quot; aa-data-attr=&quot;track_cta&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; value=&quot;productsMegaMenu&quot;&gt;...&lt;/a&gt; is not clickable at point (555, 30). Other element would receive the click: &lt;div class=&quot;modal-popup modal-large book-bike-ride request-callback&quot; id=&quot;requestCallBackModel&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.117)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b507ee119f5321c0d93021ee6d6d8773, clickElement {id=f.EB58FCBDBC53332CE7E8B5F43AF412BD.d.B07FA1BFA48684629982BF88C5CE14B3.e.430}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\QA\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58467/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b507ee119f5321c0d93021ee6d6d8773)] -&gt; xpath: //a[normalize-space()=&apos;PRODUCTS&apos;]]
+Session ID: b507ee119f5321c0d93021ee6d6d8773 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at GB_Webapp.Utility.Library.click(Library.java:37)
+	at GB_Webapp.StepDefinition.LoginPageTest.click_on(LoginPageTest.java:117)
+	at ✽.Click on &quot;Product&quot;(file:///C:/Users/QA/OneDrive/Documents/Zoom/Intellij_trial/Hero_GB_WebApp_UI_Testing_BDD/./FeatureFilesBangladesh/01_LoginFeature.feature:48)
+</pre></div></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_012 Successfully verify Splendor+SE bike feature under commuter icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>17</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_019 Successfully verify Thriller_160R_4V bike feature under Premium icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>16</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_021 Successfully verify Hunk_150R bike feature under Premium icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>17</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_004 Successfully verify all product image icons", "HomePage"</td>
+<td></td>
+<td>10</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_016 Successfully verify Glamour bike feature under executive icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>17</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_023 Successfully verify Pleasure bike feature under Scooter icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>15</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_013 Successfully verify Splender+_XTEC bike feature under commuter icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>16</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_014 Successfully verify Passion_XPRO bike feature under commuter icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>15</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_018 Successfully verify Ignitor_XTEC bike feature under executive icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>15</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_015 Successfully verify Passion_XPRO_XTEC bike feature under commuter icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>18</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_001 Successfully open global website link", "HomePage"</td>
+<td></td>
+<td>8</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_005 Successfully verify product icons", "HomePage"</td>
+<td></td>
+<td>2</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_022 Successfully verify Thriller_160R bike feature under Premium icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>18</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_020 Successfully verify Hunk_150 bike feature under Premium icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>16</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_017 Successfully verify Ignitor_techno bike feature under executive icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>17</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_003 Successfully verify all tabbar icons", "HomePage"</td>
+<td></td>
+<td>1</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_011 Successfully verify Hf_Deluxe bike feature under commuter icon", "Bangladesh BikeFeature"</td>
+<td></td>
+<td>19</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+<tr>
+<td title='GB_Webapp.TestRunner.Bangladesh.runScenario()'><b>runScenario</b><br>Test class: GB_Webapp.TestRunner.Bangladesh<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC_002 Successfully open bangladesh global website link", "HomePage"</td>
+<td></td>
+<td>4</td>
+<td>GB_Webapp.TestRunner.Bangladesh@46944ca9</td></tr>
+</table><p>
+</body>
+</html>
